@@ -1,0 +1,8 @@
+streamlit
+sentence-transformers
+scikit-learn
+qdrant-client
+google-api-python-client
+vaderSentiment
+plotly
+transformers
