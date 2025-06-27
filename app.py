@@ -1,3 +1,4 @@
+st.write("🔐 YT KEY:", YOUTUBE_API_KEY)
 
 import os
 import re
