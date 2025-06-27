@@ -14,13 +14,22 @@ bash
 pip install streamlit sentence-transformers scikit-learn qdrant-client \
     google-api-python-client vaderSentiment plotly transformers
 this code
-1️⃣ Step 1: Add Your API Key
+
+
+Step 1: Add Your API Key
+
+
 Create a secrets file inside a folder in your project directory:
-3️⃣ Step 3: Run the App
+
+YOUTUBE_API_KEY = "your_actual_youtube_api_key"
+
+Step 2: Run the App
+
+
 In your terminal, from the root of your project folder:
 
-bash
-Copy
-Edit
+
 streamlit run app.py
-YOUTUBE_API_KEY = "your_actual_youtube_api_key"
+
+
+
