@@ -26,13 +26,11 @@ model = SentenceTransformer(EMBED_MODEL_NAME)
 client = QdrantClient(":memory:")
 analyzer = SentimentIntensityAnalyzer()
 
-@st.cache_resource
-def load_phi_model():
-    tokenizer = AutoTokenizer.from_pretrained("microsoft/phi-1_5")
-    model = AutoModelForCausalLM.from_pretrained("microsoft/phi-1_5")
-    return pipeline("text-generation", model=model, tokenizer=tokenizer)
-
-llm_pipe = load_phi_model()
+st.info("⏳ Loading Phi model...")
+tokenizer = AutoTokenizer.from_pretrained("microsoft/phi-1_5")
+model = AutoModelForCausalLM.from_pretrained("microsoft/phi-1_5")
+llm_pipe = pipeline("text-generation", model=model, tokenizer=tokenizer)
+st.success("✅ Phi model loaded.")
 
 def get_video_id(url):
     match = re.search(r"(?:v=|youtu.be/)([a-zA-Z0-9_-]{11})", url)
