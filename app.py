@@ -1,4 +1,4 @@
-st.write("🔐 YT KEY:", YOUTUBE_API_KEY)
+
 
 import os
 import re
@@ -12,7 +12,7 @@ from googleapiclient.discovery import build
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import plotly.express as px
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
-
+st.write("🔐 YT KEY:", YOUTUBE_API_KEY)
 # ------------------------- CONFIG -------------------------
 YOUTUBE_API_KEY = st.secrets["YOUTUBE_API_KEY"]
 QDRANT_COLLECTION = "youtube-comments"
