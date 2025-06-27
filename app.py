@@ -12,12 +12,12 @@ from googleapiclient.discovery import build
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import plotly.express as px
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
-st.write("🔐 YT KEY:", YOUTUBE_API_KEY)
+
 # ------------------------- CONFIG -------------------------
 YOUTUBE_API_KEY = st.secrets["YOUTUBE_API_KEY"]
 QDRANT_COLLECTION = "youtube-comments"
 EMBED_MODEL_NAME = "all-MiniLM-L6-v2"
-
+st.write("🔐 YT KEY:", YOUTUBE_API_KEY)
 # ------------------------- INIT -------------------------
 st.set_page_config(page_title="📊 YouTube Comment QA (Free LLM)", layout="wide")
 st.title("📊 YouTube Comment Analyzer")
