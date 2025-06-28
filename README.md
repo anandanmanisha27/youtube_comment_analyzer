@@ -32,4 +32,10 @@ In your terminal, from the root of your project folder:
 streamlit run app.py
 
 
+You will be able to see the page similar to the screenshots provided.
+
+
+
+
+
 
