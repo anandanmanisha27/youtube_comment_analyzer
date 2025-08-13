@@ -1,12 +1,39 @@
-# 📊 YouTube Comment QA App
+# YouTube Comment Analyzer
 
-This app fetches YouTube comments, embeds them using `sentence-transformers`, stores them in Qdrant, and lets you:
+An interactive web app that:
+- Fetches comments from a YouTube video
+- Embeds and stores them in a **Qdrant** vector database
+- Lets you **ask questions** about the comments using **OpenAI GPT models**
+- Runs **sentiment analysis** with VADER
+- Extracts **top keywords**
+- Displays results in a nice dashboard
 
-- Ask questions (via Phi-1.5 LLM)
-- Analyze sentiment
-- Extract top keywords
+---
 
-### 🚀 How to Run
+## 🚀 Features
+
+- **YouTube API Integration** — Fetch up to 100 comments from a video
+- **Vector Search** — Store & search comment embeddings with Qdrant
+- **AI Q&A** — Ask questions about the comment set (powered by GPT)
+- **Sentiment Analysis** — Pie chart breakdown (positive / neutral / negative)
+- **Keyword Extraction** — Top 10 keywords from retrieved comments
+
+---
+
+## 🛠 Tech Stack
+
+- [Python 3.9+](https://www.python.org/)
+- [Streamlit](https://streamlit.io/)
+- [Sentence Transformers](https://www.sbert.net/)
+- [Qdrant](https://qdrant.tech/)
+- [OpenAI Python SDK](https://platform.openai.com/)
+- [Google API Client](https://developers.google.com/api-client-library/python)
+- [VADER Sentiment](https://github.com/cjhutto/vaderSentiment)
+- [Plotly Express](https://plotly.com/python/plotly-express/)
+
+---
+
+## 📦 Installation
 
 Install dependencies before running:
 
